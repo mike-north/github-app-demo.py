@@ -11,7 +11,7 @@ from sseclient import SSEClient as Client
 # Allow interruption via `kill -s INT`
 # https://stackoverflow.com/a/40785230
 import signal; signal.signal(signal.SIGINT, signal.default_int_handler)
-
+  
 try:
     # Connect to stream
     stream = Client(os.environ['WEBHOOK_PROXY_URL'])
